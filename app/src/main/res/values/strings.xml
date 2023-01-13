@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Maroon Worksampler</string>
+    <string name="create_project_title">Create Project</string>
+    <string name="title_activity_project_in_progress">ProjectInProgress</string>
+    <string name="tab_text_1">Operators/Machines</string>
+    <string name="tab_text_2">Sampling Schedule</string>
+    <string name="title_activity_results_trial">ResultsTrial</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="help_work_sampler_title"><b>Maroon Worksampler</b></string>
+    <string name="help_work_sampler_description">"\t\tMaroon Worksampler is an Android application for conducting work sampling studies."
+        "The app is still in testing mode. For more details, you may contact:\n\nFranz Velasco\nfsvelasco@up.edu.ph"</string>
+    <string name="help_create_project_title"><b>Creating a project</b></string>
+    <string name="help_create_project_description">"\t\tIn creating a project, you must add the name of the project, "
+        "choose the confidence level for the study, and choose the source of proportion estimates. "
+        "You must add the operators/machines to be observed, and add the list of activities for each operator/machine. "
+        "Lastly, you must specify the duration of your study."</string>
+    <string name="help_confidence_level_title"><u>Confidence level</u></string>
+    <string name="help_confidence_level_description">"\t\tIn creating a project, you are required to choose the z-value of "
+        "the corresponding level of confidence of the study. This z-value will be used in the calculations throughout the study."
+        " Higher confidence level means more accurate results which needs more samples to be recorded. Lower confidence level "
+        "means less accurate results which needs less samples to be recorded."</string>
+    <string name="help_proportion_estimates_title"><u>Proportion estimates</u></string>
+    <string name="help_proportion_estimates_description">"\t\tProportion estimates are needed in the calculation of needed samples."
+        "If there are no available data for proportion estimates of the activities, "
+        "it is recommended to conduct preliminary sampling. If you choose to conduct preliminary sampling, you do not have "
+        "to add estimates of proportion for the activity, but you will be required to allot days for preliminary sampling. "
+        "\n\n\t\tIf you choose to input proportion estimates, you will not be conducting preliminary sampling but are required "
+        "to input proportion estimates for each activity of each operator/machine."</string>
+    <string name="help_adding_operator_machine_title"><u>Adding an operator/machine</u></string>
+    <string name="help_adding_operator_machine_description">"\t\tIn adding an operator or a machine, you must enter the name, "
+        "click on the days of work, specify work hours and break time, and add the list of activities. "</string>
+    <string name="help_adding_activity_title"><u>Adding an activity</u></string>
+    <string name="help_adding_activity_description">"\t\tIn adding an activity, you must enter the name, "
+        "choose the classification of activity, and enter the acceptable error. The acceptable error is the maximum allowable value "
+        "for the error of the activity's proportion, which is also used in the calculation of needed samples. "
+        "\n\n\t\tThe input field for proportion estimate "
+        "will be disabled if you have chosen to conduct preliminary sampling, but will be enabled and required if you "
+        "have chosen to input proportion estimates."
+        "\n\n\t\tIf you plan on calculating the utilization or allowances for a particular operator/machine, you may click on the switch "
+        "to specify if the activity contributes to the utilization or allowances."</string>
+    <string name="help_sampling_schedule_title"><u>Sampling schedule</u></string>
+    <string name="help_sampling_schedule_description">"\t\tThe last part of creating a project is specifying the project duration "
+        "which is divided into two (2) parts: preliminary sampling and actual sampling. If you have chosen to conduct "
+        "preliminary sampling, you will be required to specify the duration for both preliminary and actual sampling. "
+        "You will also be required to generate sampling schedule only for preliminary sampling, since schedule for actual sampling "
+        "will only be generated once preliminary sampling is over."
+        "\n\n\t\tIf you have chosen to input proportion estimates, you will not be asked to input preliminary sampling dates. "
+        "You are only required to specify the duration and generate schedule for actual sampling." </string>
+    <string name="help_getting_samples_title"><b>Getting samples</b></string>
+    <string name="help_getting_samples_description">"\t\tOnce a project is successfully created, Sampling Page will be shown. "
+        "There are two (2) tabs in this page: Operators/Machines Tab and Sampling Schedule Tab."</string>
+    <string name="help_operators_machines_tab_title"><u>Operators/machines tab</u></string>
+    <string name="help_operators_machines_tab_description">"\t\tIn this tab, the buttons for the operators and machines are shown. "
+        "Clicking on any of the buttons will show the Get Sample Dialog where you may record the sample, or simply view "
+        "partial results for the operator or machine. You may only record samples during the randomized sampling time for "
+        "the operator or machine. You must record the sample in 30 seconds, or you'll miss it."
+        "\n\n\t\tTo record sample, simply click on the button of the activity to be recorded. You may also click on \"Others\" button "
+        "if you want to add a new activity or add remarks."</string>
+    <string name="help_sampling_schedule_tab_title"><u>Sampling schedule tab</u></string>
+    <string name="help_sampling_schedule_tab_description">"\t\tIn this tab, the sampling schedule for the day is shown. "
+        "The buttons show the time for recording a sample, and which operator or machine is to be observed. "
+        "The button turns to green when the sample is recorded, red when missed, and yellow when remarks are added. "
+        "You may click on the buttons to see the details of the sample."</string>
+    <string name="help_viewing_results_title"><b>Viewing results</b></string>
+    <string name="help_viewing_results_description">"\t\tIn viewing the results, you may choose the operator or machine from the "
+        "dropdown list, or swipe left/right. You may also click on the buttons of the activities to see the results of each."
+        "\n\n\t\tFor value-adding activities, you may calculate the standard time of producing one unit of output. "
+        "This is done by entering the quantity produced for the activity, the total production hours corresponding to the quantity produced, "
+        "and the performance rating of the operator doing the activity. "
+        "You may also input the allowances to be used, or use the allowances calculated in the study."</string>
+    <string name="about">"<b>Maroon Worksampler</b> is an Android application for conducting work sampling studies. "
+        "This app was designed and developed by <b>Franz Christian Velasco</b>, an industrial engineering student "
+        "from the <b>University of the Philippines Los Baños</b>, with the guidance of his professors:"
+        "\n\nAdviser: Asst. Prof. Angelo C. Ani\n\nPanel members: "
+        "\n\t\tAsst. Prof. Mark Anthony M. Baldoz\n\t\tAsst. Prof. Clarissa M. Pesigan\n\t\tAsst. Prof. Micah A. Ramirez"
+        "\n\nFor more information, you may contact the developer via email:\nfsvelasco@up.edu.ph\n"</string>
+    <string name="channel_name">Maroon Worksampler notification channel</string>
+    <string name="channel_description">"This is the notification channel used by Maroon Worksampler"
+        "to alert users when it\'s time to get sample."</string>
+</resources>

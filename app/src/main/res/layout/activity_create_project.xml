@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".CreateProject">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="closeKeyboardOnClick"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Project Name:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter project name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_confidence_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Confidence Level"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rgZValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_z1.645"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="closeKeyboardOnClick"
+                    android:text="z = 1.645 (90%)"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_z1.96"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="closeKeyboardOnClick"
+                    android:text="z = 1.96 (95%) "
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_z2.58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="closeKeyboardOnClick"
+                    android:text="z = 2.58 (99%) "
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_z_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Input other z-value:"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_z_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter z-value"
+                android:textSize="16sp"
+                android:inputType="number|numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Proportion Estimates"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_pre_sampling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conduct preliminary sampling "
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_input_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Input estimate of p for each activity"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next_ope"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_maroon"
+        android:onClick="btnNextOnClick"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp" />
+
+    <Button
+        android:id="@+id/btn_cancel_create_project"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/button_maroon"
+        android:onClick="btnCancelOnClick"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp" />
+
+
+</RelativeLayout>

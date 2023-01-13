@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed to creating a project"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cbxDifferentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Choose a different way of conducting work sampling:"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp">
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_mode_default"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Default mode"-->
+            <!--android:textColor="@android:color/background_dark"/>-->
+        <RadioButton
+            android:id="@+id/rb_mode_self_WS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self-reported work sampling"
+            android:enabled="false"/>
+        <RadioButton
+            android:id="@+id/rb_mode_rated_WS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rated work sampling"
+            android:enabled="false"/>
+    </RadioGroup>
+
+</LinearLayout>

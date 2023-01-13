@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marasigan.worksampler">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/worksamplerlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/worksamplerlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateProject" />
+        <activity android:name=".Operators" />
+        <activity android:name=".OperatorDetails" />
+        <activity android:name=".ProjectSchedule" />
+        <activity
+            android:name=".ProjectInProgress"
+            android:label="@string/title_activity_project_in_progress"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Results"
+            android:label="@string/title_activity_results_trial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelfWorkSamplingInProgress"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Help" />
+
+        <receiver android:name=".receiver.MyBroadcastReceiver">
+            <intent-filter>
+                <!--<action android:name="NOTIFICATION_SERVICE" />-->
+                <!--<action android:name="android.media.action.DISPLAY_NOTIFICATION" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".receiver.GetSampleNotificationService"/>
+    </application>
+
+</manifest>

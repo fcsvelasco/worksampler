@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Operators">
+
+    <TextView
+        android:id="@+id/tv_operators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operators"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_operators"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/tv_operators"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_operators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_ope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_view_operators"
+        android:onClick="btnAddOperatorOnClick"
+        android:textAllCaps="false"
+        android:text="Add operator" />
+
+    <TextView
+        android:id="@+id/tv_machines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Machines"
+        android:textSize="18sp"
+        android:layout_below="@+id/btn_add_ope"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view_machines"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_machines">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_machines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_add_mach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_view_machines"
+        android:onClick="btnAddMachineOnClick"
+        android:textAllCaps="false"
+        android:text="Add machine" />
+
+    <Button
+        android:id="@+id/btn_back_create"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="60dp"
+        android:onClick="btnPreviousOnClick"
+        android:background="@drawable/button_maroon"
+        android:textColor="@color/textWhite"
+        android:text="Previous"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:id="@+id/btn_next_presampling_sched"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_back_create"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="btnNextOnClick"
+        android:textAllCaps="false"
+        android:background="@drawable/button_maroon"
+        android:textColor="@color/textWhite"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp" />
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProjectSchedule"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/preliminary_sampling_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Schedule for Preliminary Sampling"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start date:"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:id="@+id/etPresamplingStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:hint="mm/dd/yyyy"
+                android:onClick="etDateOnClick"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End date:"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:id="@+id/etPresamplingEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:hint="mm/dd/yyyy"
+                android:onClick="etDateOnClick"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_number_of_presamples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samples per operator/machine" />
+
+            <EditText
+                android:id="@+id/etPresamplingSamples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:imeOptions="actionDone"
+                android:inputType="number|numberSigned"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPresamplingGenerateSched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnGenerateSchedOnClick"
+            android:text="Generate Random Schedule"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPresamplingSchedDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:onClick="btnSchedDetailsOnClick"
+            android:text="View Schedule Details"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Samples per day per operator/machine: "-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:visibility="invisible"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Total samples per day: "-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:visibility="invisible"/>-->
+
+    <LinearLayout
+        android:id="@+id/actual_sampling_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preliminary_sampling_linear_layout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Schedule for Actual Sampling"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start date:"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:id="@+id/etActualStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:hint="mm/dd/yyyy"
+                android:onClick="etDateOnClick"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End date:"
+                android:layout_weight=".5"/>
+
+            <EditText
+                android:id="@+id/etActualEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:hint="mm/dd/yyyy"
+                android:onClick="etDateOnClick"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnActualGenerateSched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Generate Random Schedule"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:onClick="btnGenerateSchedOnClick"/>
+
+        <Button
+            android:id="@+id/btnActualSchedDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="View Schedule Details"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:enabled="false"
+            android:onClick="btnSchedDetailsOnClick"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/button_maroon"
+        android:onClick="btnPreviousOnClick"
+        android:text="Previous"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/button_maroon"
+        android:onClick="btnFinishOnClick"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

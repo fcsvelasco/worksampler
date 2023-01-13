@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    -->
+
+    <color name="colorPrimary">#7b1113</color>
+    <color name="colorPrimaryDark">#6A0D0F</color>
+    <color name="colorAccent">#014421</color>
+
+    <color name="buttonGreen">#014421</color>
+    <color name="buttonMaroon">#7b1113</color>
+
+    <color name="textWhite">#cacaca</color>
+    <color name="textBlack">#000000</color>
+
+    <color name="sampleRecorded">#008000</color>
+    <color name="sampleWithRemarks">#dddd00</color>
+    <color name="sampleMissed">#c60000</color>
+
+    <color name="pieChartVA">#02c8a7</color>
+    <color name="pieChartNVAE">#f9be02</color>
+    <color name="pieChartNVAN">#f53240</color>
+    <color name="pieChartOthers">#7cdbd5</color>
+</resources>

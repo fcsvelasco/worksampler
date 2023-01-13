@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ResultsFragment"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/results_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55">
+        <!--android:layout_below="@id/tv_number_of_samples_taken"-->
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_results_samples_taken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samples taken: "
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_results_utilization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilization: "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_results_allowances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allowances: "
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activities:"
+            android:textSize="16sp"/>
+
+        <ScrollView
+            android:id="@+id/results_activities_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:layout_below="@+id/results_pie_chart"-->
+
+            <LinearLayout
+                android:id="@+id/results_activities_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp">
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Activities:"-->
+                <!--android:textSize="18sp"/>-->
+
+            <!--<ScrollView-->
+                <!--android:id="@+id/results_activities_scroll_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--&lt;!&ndash;android:layout_below="@+id/results_pie_chart"&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/results_activities_linear_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                <!--</LinearLayout>-->
+            <!--</ScrollView>-->
+        <!--</LinearLayout>-->
+
+</LinearLayout>

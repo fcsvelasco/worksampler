@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/buttonMaroon">
+    <!--android:background="@drawable/homepage_background_small"-->
+
+    <Button
+        android:id="@+id/btn_create_proj"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_demo_create_proj"
+        android:background="@drawable/button_green"
+        android:onClick="btnCreateOnClick"
+        android:text="Create Project"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:layout_alignParentBottom="false"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_demo_create_proj"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_create_sample_proj"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_green"
+        android:onClick="btnDemoCreateOnClick"
+        android:text="Demo Create"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_create_sample_proj"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_load_proj"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_green"
+        android:onClick="btnSampleProjectOnClick"
+        android:text="Demo Sampling"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_load_proj"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_results"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_green"
+        android:onClick="btnLoadProjectOnClick"
+        android:text="Load Project"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_results"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_about"
+        android:background="@drawable/button_green"
+        android:onClick="btnResultsOnClick"
+        android:text="Demo Results"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_green"
+        android:onClick="btnAboutOnClick"
+        android:text="About"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:visibility="invisible"
+            android:enabled="false"/>
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/worksamplerlogo_with_text" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:visibility="invisible"
+            android:enabled="false"/>
+    </LinearLayout>
+</RelativeLayout>

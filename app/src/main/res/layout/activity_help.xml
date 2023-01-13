@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".Help">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/help_work_sampler_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_work_sampler_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/help_work_sampler_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_work_sampler_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_create_project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_create_project_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/help_create_project_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_create_project_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_confidence_level_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_confidence_level_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_confidence_level_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_confidence_level_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_proportion_estimates_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_proportion_estimates_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_proportion_estimates_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_proportion_estimates_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_adding_operator_machine_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_adding_operator_machine_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_adding_operator_machine_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_adding_operator_machine_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_adding_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_adding_activity_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_adding_activity_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_adding_activity_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_sampling_schedule_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_sampling_schedule_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_sampling_schedule_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_sampling_schedule_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_getting_samples_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_getting_samples_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/help_getting_samples_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_getting_samples_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_operator_machines_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_operators_machines_tab_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_operators_machines_tab_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_operators_machines_tab_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_sampling_schedule_tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_sampling_schedule_tab_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/help_sampling_schedule_tab_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_sampling_schedule_tab_description"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/help_viewing_results_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_viewing_results_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/help_viewing_results_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/help_viewing_results_description"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
